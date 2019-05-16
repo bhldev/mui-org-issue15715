@@ -2,14 +2,23 @@
   "name": "mui-org-issue15715",
   "version": "0.1.0",
   "private": true,
+  "main": "./lib/index.js",
+  "typings": "lib/index.d.ts",
   "dependencies": {
+    "@material-ui/core": "next",
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.2",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "prebuild": "rimraf lib",
+    "build": "cross-env NODE_ENV=production tsc -p tsconfig.json",
+    "postbuild": "api-extractor run --verbose && rimraf dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -27,5 +36,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.1.5",
+    "cross-env": "^5.2.0",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.4.5"
   }
 }

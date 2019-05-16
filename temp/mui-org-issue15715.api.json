@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.1.5",
+    "schemaVersion": 1000
+  },
+  "kind": "Package",
+  "canonicalReference": "mui-org-issue15715",
+  "docComment": "",
+  "name": "mui-org-issue15715",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "App",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Reference",
+              "text": "App"
+            },
+            {
+              "kind": "Content",
+              "text": ": "
+            },
+            {
+              "kind": "Content",
+              "text": "() => "
+            },
+            {
+              "kind": "Reference",
+              "text": "JSX"
+            },
+            {
+              "kind": "Content",
+              "text": "."
+            },
+            {
+              "kind": "Reference",
+              "text": "Element"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "App",
+          "variableTypeTokenRange": {
+            "startIndex": 2,
+            "endIndex": 6
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "createTheme",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Reference",
+              "text": "createTheme"
+            },
+            {
+              "kind": "Content",
+              "text": ": "
+            },
+            {
+              "kind": "Content",
+              "text": "("
+            },
+            {
+              "kind": "Reference",
+              "text": "theme"
+            },
+            {
+              "kind": "Content",
+              "text": "?: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ThemeOptions"
+            },
+            {
+              "kind": "Content",
+              "text": ") => import(\"@material-ui/core/styles/createMuiTheme\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "Theme"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "createTheme",
+          "variableTypeTokenRange": {
+            "startIndex": 2,
+            "endIndex": 8
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "theme",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Reference",
+              "text": "theme"
+            },
+            {
+              "kind": "Content",
+              "text": ": "
+            },
+            {
+              "kind": "Content",
+              "text": "import(\"@material-ui/core/styles/createMuiTheme\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "Theme"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "theme",
+          "variableTypeTokenRange": {
+            "startIndex": 2,
+            "endIndex": 4
+          }
+        }
+      ]
+    }
+  ]
+}
